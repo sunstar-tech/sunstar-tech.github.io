@@ -56,7 +56,17 @@ a{color:inherit}
 }
 
 .hero{
-  padding: 56px 0 26px;
+ position: relative;
+  padding: 80px 0 40px;
+  background-image:
+    linear-gradient(
+      rgba(11,31,51,0.65),
+      rgba(11,31,51,0.65)
+    ),
+    url("../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .hero__inner{
   display:grid;
@@ -251,4 +261,5 @@ a{color:inherit}
   /* 联系模板块：避免太高 */
   .template{ font-size: 13px; }
 }
+
 
