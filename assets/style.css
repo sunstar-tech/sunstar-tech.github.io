@@ -215,3 +215,40 @@ a{color:inherit}
   .contact{grid-template-columns:1fr}
   .hero__title{font-size:28px}
 }
+
+@media (max-width: 520px){
+  /* 顶部栏：品牌与语言按钮换行更自然 */
+  .header__inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .nav{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* Hero：减少内边距，标题更适合手机 */
+  .hero__copy{ padding: 20px; }
+  .hero__title{ font-size: 24px; }
+  .hero__desc{ font-size: 15px; }
+
+  /* 按钮：手机端更好点按 */
+  .btn{
+    padding: 12px 14px;
+    border-radius: 14px;
+  }
+  .hero__cta .btn{ flex: 1; } /* 两个按钮并排等宽，手感好 */
+
+  /* 卡片：减少阴影、避免太“厚重” */
+  .card, .step, .hero__copy, .panel{
+    box-shadow: 0 6px 18px rgba(15, 23, 42, .07);
+  }
+
+  /* 列表缩进适配小屏 */
+  .list{ padding-left: 16px; }
+
+  /* 联系模板块：避免太高 */
+  .template{ font-size: 13px; }
+}
+
